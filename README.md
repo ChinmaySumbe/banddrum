@@ -65,7 +65,7 @@ Just open `index.html` in your favorite browser.
 
 ## **👨‍💻 Author**
 
-✉️ **Omkar Magare**\
+✉️ **Chinmay Sumbe**\
 🔗 [LinkedIn](https://www.linkedin.com/in/chinmay-sumbe/)\
 🐙 [GitHub](https://github.com/ChinmaySumbe/)
 
