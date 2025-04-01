@@ -12,12 +12,16 @@ for(var i = 0; i < numofbutton; i++) {
     var buttonInner = this.innerHTML;
 
     makeSound(buttonInner);
+
+    buttonAnimation(buttonInner);
     }
 }
 
 // Detecting keys from keyboard
 document.addEventListener("keydown", function(event){
     makeSound(event.key);
+
+    buttonAnimation(event.key);
 });
  
 function makeSound(key) {
@@ -65,3 +69,13 @@ function makeSound(key) {
 }
 // var audio = new Audio("sounds/tom-1.mp3");
 // audio.play();
+
+function buttonAnimation(currentkey)
+{
+    var activebutton = document.querySelector("." + currentkey);
+    activebutton.classList.add("pressed");
+
+    setTimeout(function() {
+        activebutton.classList.remove("pressed");
+    }, 100);
+}
